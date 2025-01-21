@@ -14,3 +14,8 @@ They only look the same in code and within the same project.
 
 This is not the same signature
 <img width="429" alt="image" src="https://github.com/user-attachments/assets/32f44522-d9e6-4e3d-b926-4bc3e9eeafa2" />
+
+
+# For once I agree with CoPilot and we are both wrong
+
+<img width="587" alt="image" src="https://github.com/user-attachments/assets/7c20d015-5825-4490-b03a-3cffc44cea40" />
