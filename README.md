@@ -8,6 +8,7 @@ https://learn.microsoft.com/en-us/dotnet/fsharp/style-guide/conventions#partial-
 
 Point free function gives nullpointer when referenced from an project, when the project with the point free function is a console app without an explicit main method.
 
+Project 1 is a console app with no entry point, Project 3 is the same code but in a console app with an entry point, and project 2 refers them and runs the code to demonstrate the project 1 is crashing.
 ```
 dotnet run --project .\project1\project2.fsproj
 ```
