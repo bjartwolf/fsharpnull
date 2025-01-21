@@ -4,14 +4,9 @@ I think the TIL is that exposing functions in the point free style accross assem
 https://learn.microsoft.com/en-us/dotnet/fsharp/style-guide/conventions#partial-application-and-point-free-programming
 > F# supports partial application, and thus, various ways to program in a point-free style. This can be beneficial for code reuse within a module or the implementation of something, but it is not something to expose publicly. In general, point-free programming is not a virtue in and of itself, and can add a significant cognitive barrier for people who are not immersed in the style.
 
- ## BUT it got weirder
- As I thought I understood it, I found something else. Building it like a library converts it to a function that works.
- 
- <img width="803" alt="image" src="https://github.com/user-attachments/assets/12a51a90-6def-4db9-ae43-39b55bb89259" />
-
 # fsharpnull
 
-Point free stuff gives nullpointer when referenced from a project which is a console app without an explicit main method.
+Point free function gives nullpointer when referenced from an project, when the project with the point free function is a console app without an explicit main method.
 
 ```
 dotnet run --project .\project1\project2.fsproj
