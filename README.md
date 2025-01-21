@@ -11,16 +11,9 @@ Point free function gives nullpointer when referenced from an project, when the 
 ```
 dotnet run --project .\project1\project2.fsproj
 ```
-It gets compiled to a FSharpFunc and that somehow gives null pointer when referenced.
+It gets compiled to a FSharpFunc and that somehow gives null pointer when there is no main method explictly defined.
 
-<img width="821" alt="image" src="https://github.com/user-attachments/assets/d2396b8d-a921-40e5-bb75-eef3bdf1b852" />
-
-They only look the same in code and within the same project.
-<img width="352" alt="image" src="https://github.com/user-attachments/assets/bbbf6f4f-4faf-4414-97f7-f7716fab50e9" />
-
-This is not the same signature
-<img width="429" alt="image" src="https://github.com/user-attachments/assets/32f44522-d9e6-4e3d-b926-4bc3e9eeafa2" />
-
+<img width="839" alt="image" src="https://github.com/user-attachments/assets/6fc761cd-e023-474d-9726-3cb7acb223bf" />
 
 # IL Spy
 ## Normal
