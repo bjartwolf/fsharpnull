@@ -20,3 +20,15 @@ This is not the same signature
 # For once I agree with CoPilot and we are both wrong
 
 <img width="587" alt="image" src="https://github.com/user-attachments/assets/7c20d015-5825-4490-b03a-3cffc44cea40" />
+
+https://github.com/fsharp/fsharp-compiler-docs/issues/838
+
+# IL Spy
+## Normal
+<img width="580" alt="image" src="https://github.com/user-attachments/assets/2ca5086f-5a2b-471b-a1f9-833bbace5d67" />
+
+## Point free
+<img width="672" alt="image" src="https://github.com/user-attachments/assets/23363fef-6376-45d5-b0dc-ad4e8e88342c" />
+
+
+<img width="424" alt="image" src="https://github.com/user-attachments/assets/72a4a4c5-529f-41e0-9762-b1e81e0e11e4" />
