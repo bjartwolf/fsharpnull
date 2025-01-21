@@ -1,4 +1,4 @@
-﻿module Foo
+﻿module FooLib
 
 let add1 x = x + 1
 
