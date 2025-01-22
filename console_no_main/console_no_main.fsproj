@@ -14,6 +14,7 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Compile Include="FunctionInModule.fs" />
     <Compile Include="Program.fs" />
   </ItemGroup>
 
