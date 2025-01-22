@@ -14,3 +14,6 @@ dotnet run --project .\console_host\console_host.fsproj
 The point free version gets compiled to a FSharpFunc and that somehow gives null pointer when there is no main method explictly defined.
 
 <img width="805" alt="image" src="https://github.com/user-attachments/assets/49488d82-b618-4a42-b800-2ca55f504c21" />
+
+The code does work when running from the project itself, just when refernced, as with a unit test project it fails.
+<img width="810" alt="image" src="https://github.com/user-attachments/assets/a1a90057-134e-4aa4-a238-74ee86edef6a" />
