@@ -1,5 +1,7 @@
 # Summary
 I think the TIL is that exposing functions in the point free style accross assemblies is not a good idea, but there is something wrong in here with top-level statements and fsharpfunc where something is not initialized properly and throws null pointer.
+This is the case when referencing a console app without a main method (the default now in dotnet) from a xunit project.
+If one then exposes something like a ```let parselines = Array.map parseline``` unit tests will crash with null pointer.
 
 https://learn.microsoft.com/en-us/dotnet/fsharp/style-guide/conventions#partial-application-and-point-free-programming
 > F# supports partial application, and thus, various ways to program in a point-free style. This can be beneficial for code reuse within a module or the implementation of something, but it is not something to expose publicly. In general, point-free programming is not a virtue in and of itself, and can add a significant cognitive barrier for people who are not immersed in the style.
