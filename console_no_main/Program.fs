@@ -1,4 +1,4 @@
-﻿module Foo
+﻿module ConsoleNoMain 
 
 let add1 x = x + 1
 

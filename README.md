@@ -1,5 +1,5 @@
 # Summary
-I think the TIL is that exposing functions in the point free style accross assemblies is not a good idea, but there is something weirder in here with top-level statements and fsharpfunc.
+I think the TIL is that exposing functions in the point free style accross assemblies is not a good idea, but there is something wrong in here with top-level statements and fsharpfunc where something is not initialized properly and throws null pointer.
 
 https://learn.microsoft.com/en-us/dotnet/fsharp/style-guide/conventions#partial-application-and-point-free-programming
 > F# supports partial application, and thus, various ways to program in a point-free style. This can be beneficial for code reuse within a module or the implementation of something, but it is not something to expose publicly. In general, point-free programming is not a virtue in and of itself, and can add a significant cognitive barrier for people who are not immersed in the style.
@@ -8,9 +8,8 @@ https://learn.microsoft.com/en-us/dotnet/fsharp/style-guide/conventions#partial-
 
 Point free function gives nullpointer when referenced from an project, when the project with the point free function is a console app without an explicit main method.
 
-Project 1 is a console app with no entry point, Project 3 is the same code but in a console app with an entry point, and project 2 refers them and runs the code to demonstrate the project 1 is crashing.
 ```
-dotnet run --project .\project1\project2.fsproj
+dotnet run --project .\console_host\console_host.fsproj
 ```
 It gets compiled to a FSharpFunc and that somehow gives null pointer when there is no main method explictly defined.
 
@@ -22,6 +21,5 @@ It gets compiled to a FSharpFunc and that somehow gives null pointer when there 
 
 ## Point free
 <img width="672" alt="image" src="https://github.com/user-attachments/assets/23363fef-6376-45d5-b0dc-ad4e8e88342c" />
-
 
 <img width="424" alt="image" src="https://github.com/user-attachments/assets/72a4a4c5-529f-41e0-9762-b1e81e0e11e4" />

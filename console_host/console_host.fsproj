@@ -10,8 +10,8 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\project1\project1.fsproj" />
-    <ProjectReference Include="..\project3lib\project3lib.fsproj" />
+    <ProjectReference Include="..\console_no_main\console_no_main.fsproj" />
+    <ProjectReference Include="..\console_with_main\console_with_main.fsproj" />
   </ItemGroup>
 
 </Project>
